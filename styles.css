@@ -10,9 +10,10 @@ body{
     justify-content: center;
     align-items: center;
     background-color: var(--basic-color);
+    font-family: Arial;
 }
 .btninp{
-    margin: 500px;
+    margin-top: 500px;
 }
 .btninp input,button{
     height: 50px;
@@ -20,4 +21,17 @@ body{
 }
 .btninp button{
     width: 100px;
+}
+button{
+    cursor: pointer;
+}
+.weatheranswer{
+    margin: 100px;
+    width: 400px;
+    color: white;
+    background-color: rgb(173, 173, 173);
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
