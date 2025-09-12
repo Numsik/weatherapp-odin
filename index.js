@@ -24,9 +24,17 @@ async function getapi(city){
     howmuch.textContent = `${temp} °C`
 
 
-    document.querySelector('.fahrenheit').addEventListener('click', () =>{
-        let fahrenheit = temp * (9/5) + 32
-        howmuch.textContent = `${fahrenheit}F`
+    document.querySelector('.teplota').addEventListener('click', () =>{
+        if (someusshit){
+            howmuch.textContent = `${temp} °C`
+            document.querySelector('.teplota').innerHTML = "Celcius"
+            someusshit = false;
+        }else{
+            someusshit = true;
+            let fahrenheit = temp * (9/5) + 32
+            howmuch.textContent = `${fahrenheit}F`
+        }
+
     })
 
 
