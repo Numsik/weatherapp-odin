@@ -32,7 +32,8 @@ async function getapi(city){
         }else{
             someusshit = true;
             let fahrenheit = temp * (9/5) + 32
-            howmuch.textContent = `${fahrenheit}F`
+            howmuch.textContent = `${Math.round(fahrenheit)} F`
+            document.querySelector('.teplota').innerHTML = 'fahrenheit'
         }
 
     })
