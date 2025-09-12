@@ -1,0 +1,23 @@
+:root{
+    --basic-color: white;
+}
+    
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--basic-color);
+}
+.btninp{
+    margin: 500px;
+}
+.btninp input,button{
+    height: 50px;
+    border-radius: 100px;
+}
+.btninp button{
+    width: 100px;
+}
