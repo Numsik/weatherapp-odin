@@ -48,5 +48,6 @@ document.querySelector('.send').addEventListener('click', () =>{
     const input = document.querySelector('.nameofcity')
     const nameofcity = input.value
     getapi(nameofcity);
+    input.value = ""
 
 });
