@@ -16,27 +16,35 @@ async function getapi(city){
     let someusshit = false;
     let adress = data.address
     let temp = data.currentConditions.temp
+    let feelslike = data.currentConditions.feelslike
 
     const howmuch = document.querySelector('.weatherhowmuch');
     const countryhtml = document.querySelector('.namecountry');
+    const feelhtml = document.querySelector('.feeltext');
 
     countryhtml.textContent = `${adress}`
     howmuch.textContent = `${temp} °C`
+    feelhtml.textContent = `${feelslike} °C`
 
 
-    document.querySelector('.teplota').addEventListener('click', () =>{
+
+    document.querySelector('.fahrenheitbtn').addEventListener('click', () =>{
+        if (!someusshit){
+            let fahrenheit = temp * (9/5) + 32
+            let fahrenheitfeel = feelslike * (9/5) + 32
+            howmuch.textContent = `${Math.round(fahrenheit)} F`
+            feelhtml.textContent = `${Math.round(fahrenheitfeel)} F`
+            someusshit = true;
+        }
+    });
+    document.querySelector('.celciusbtn').addEventListener('click', () =>{
         if (someusshit){
             howmuch.textContent = `${temp} °C`
-            document.querySelector('.teplota').innerHTML = "Celcius"
-            someusshit = false;
-        }else{
-            someusshit = true;
-            let fahrenheit = temp * (9/5) + 32
-            howmuch.textContent = `${Math.round(fahrenheit)} F`
-            document.querySelector('.teplota').innerHTML = 'fahrenheit'
+            feelhtml.textContent = `${feelslike} °C`
+            someusshit = false
         }
-
-    })
+        
+    });
 
 
    
