@@ -1,8 +1,10 @@
 :root{
-    --basic-color: white;
+    --input-color: #F2F2F2;
+    --btn-color: #C5C5C5;
 }
     
 body{
+    background-color: #FFFFFF;
     margin: 0;
     padding: 0;
     display: flex;
@@ -10,22 +12,48 @@ body{
     justify-content: center;
     align-items: center;
     background-color: var(--basic-color);
-    font-family: Arial;
+    font-family: "Inter";
+    
 }
-.btninp{
-    margin-top: 500px;
+.header{
+    width: 400px;
+    position: relative;
+    margin: 100px 0;
 }
-.btninp input,button{
-    height: 50px;
-    border-radius: 100px;
+.title{
+    font-size: 96px;
+    font-weight: Medium;
+    margin: 0;
+    padding: 0;
 }
-.btninp button{
-    width: 100px;
+.title2{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    right: -150px;
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--btn-color);
+
 }
-button{
-    cursor: pointer;
+.nameofcity{
+    width: 335px;
+    height: 75px;
+    border: none;
+    background-color: #F2F2F2;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
+}
+.send{
+    width: 110px;
+    height: 75px;
+    background-color: #C5C5C5;
     border: none;
 }
+
+
+
+
 .weatheranswer{
     margin: 100px;
     width: 400px;
