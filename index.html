@@ -10,22 +10,28 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="header
-    ">
+    <div class="header">
         <h1 class="title">Weather</h1>
         <p class="title2">Find what is going on in your city</p>
     </div>
     
     <div class="btninp">
         <input class="nameofcity" placeholder="City">
-        <button class="send">send</button>
+        <button class="send">Send</button>
     </div>
 
-    <div class="weatheranswer">
-        <p style="font-size: 40px;">Weather</p>
-        <p class="namecountry"></p>
-
-        <p class="weatherhowmuch"></p>
+    <div class="divwithweather">
+        <img src="imgs/sunny.png" class="imgs">
+        <div class="onerow">
+            <p style="font-size: 20px; color: #717171; margin: 0;">City you are looking for is : </p>
+            <p class="namecountry"></p>
+        </div>
+        <div class="onerow">
+            <p style="font-size: 16px; color: #717171; margin: 0;">Weather in your city is : </p>
+            <p class="weatherhowmuch"></p>
+        </div>
+       
+       
 
         <button class="teplota">Convert</button>
     </div>

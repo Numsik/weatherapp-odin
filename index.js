@@ -20,7 +20,7 @@ async function getapi(city){
     const howmuch = document.querySelector('.weatherhowmuch');
     const countryhtml = document.querySelector('.namecountry');
 
-    countryhtml.textContent = `In this country is ${adress}`
+    countryhtml.textContent = `${adress}`
     howmuch.textContent = `${temp} °C`
 
 
