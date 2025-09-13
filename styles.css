@@ -104,3 +104,18 @@ body{
     margin: 0;
 
 }
+.divbuttons{
+    margin-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.divbuttons button{
+    width: 45px;
+    height: 45px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    box-shadow: 2px 2px 2px 2px #00000015;
+}
